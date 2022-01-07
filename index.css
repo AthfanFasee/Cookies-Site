@@ -1,0 +1,20 @@
+body {
+    line-height: 1.6;
+    font-size: 1.3125rem;
+}
+
+.Create {
+    background-color: rgb(79, 118, 151);
+}
+
+.Update {
+    background-color: rgb(107, 189, 69);
+
+}
+
+.Display {
+    background-color: rgb(104, 36, 36);
+}
+.Delete{
+    background-color: rgb(144, 30, 101);
+}
