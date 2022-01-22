@@ -7,8 +7,9 @@
     <title>Cookiess!!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans:wght@300;400&family=Pacifico&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -16,20 +17,68 @@
     </header>
 
     <section class="Content">
-        <h2>Create, Edit, Delete and Display Cookies here</h2>
+        <h2 class="SecondHeading">Create, Edit, Delete and Display Cookies here</h2>
         
         <div class="cookies">
-            <div class="Create">
-                <h2 class="SubHeading">Create a Cookie</h2>
+
+            <!-- Create Cookies -->
+            <div class="container">
+                <h2 class="SubHeading">Click the button below to create a cookie</h2>
+                
+                <div class="InputElements">
+                    <p>Enter key</p> 
+                    <input class="input" id="createInputKey"/>
+                </div>
+                <div class="InputElements">
+                    <p>Enter value</p>
+                    <input class="input" id="createInputValue"/>
+                </div>
+                <div class="InputElements">
+                    <p>Provide Expiry Date</p>
+                    <input class="input" type="date" id="createDate" />
+                </div>
+
+                <button onclick="createCookies()" id="create" class="btn">Create</button>
             </div>
-            <div class="Update">
-                <h2 class="SubHeading">Update your Cookie</h2>
+
+            <!-- Update Cookies -->
+            <div class="container">
+                <h2 class="SubHeading">Click the button below to Update a cookie</h2>
+                
+                <div class="InputElements">
+                    <p>Enter the key of the cookie you want to update</p> 
+                    <input class="input" id="updateInputKey"/>
+                </div>
+                <div class="InputElements">
+                    <p>Enter New value</p>
+                    <input class="input" input id="updateInputValue"/>
+                </div>
+                <div class="InputElements">
+                    <p class="InputElements">Change Expiry Date</p>
+                    <input class="input" type="date" id="updateDate" />
+                </div>
+                
+                <button onclick="updateCookies()" id="update" class="btn">Update</button>
             </div>
-            <div class="Display">
-                <h2 class="SubHeading">Display your Cookie</h2>
+
+            <!-- Delete Cookies -->
+            <div class="container">
+                <h2 class="SubHeading">Click the button below to delete a cookie</h2>
+    
+                <div class="InputElements">
+                    <p>Enter the key of the cookie you want to delete</p>
+                    <input class="input" id="deleteInput"/>
+                </div>
+
+                <button onclick="deleteCookies()" id="delete" class="btn">Delete</button>
             </div>
-            <div class="Delete">
-                <h2 class="SubHeading">Delete the Cookie</h2>
+
+            <!-- Display Cookies -->
+            <div class="container">
+                <h2 class="SubHeading">Click the button display all the cookies u got</h2>
+
+                <button onclick="displayCookies()" id="displayButton" class="btn">Display</button>
+                <div id="display" class="displaycookies"></div>
             </div>
         </div>
     </section>

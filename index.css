@@ -1,42 +1,91 @@
 body {
-    line-height: 1.6;
+    line-height: 1;
     font-size: 1.3125rem;
+    margin-left: 15px;
+    background-color: rgb(227, 246, 255);
 }
 
-@media (min-width: 700px) {
-    header,
-    .Content{
-        padding: 60px;
-    }
-}
+
 
 header,
 .Content{
-    padding: 30px 0;
+    color: rgb(0, 9, 134);
+    font-family: 'Luxurious Roman', cursive;
+    padding: 10px 0;
     margin-inline: auto;
-    width: min(90%, 70.5rem);
+    width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 25px;
+}
+.SecondHeading{
+    font-size: 35px;
+    color: #0a3107;
 }
 .SubHeading{
+    font-size: 35px;
+    color: black;
     margin-bottom: 0.75em;
+    border-bottom: rgba(0, 0, 0, 0.534) 2px solid;
+
 }
 
-.Create {
-    background-color: rgb(79, 118, 151);
-    margin-bottom: 1em;
+.displaycookies {
+    color: black;
+    font-size: 24px;
+    padding : 10px;
+    margin-top: 25px;
+    border: solid 1px black;
 }
 
-.Update {
-    background-color: rgb(107, 189, 69);
+
+.display{
+    background-color: rgb(121, 28, 85);
     margin-bottom: 1em;
+}
+.input {
+    width: 25%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px rgb(53, 50, 50) solid;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-right: 20px;
+    margin-left: 15px;
 }
 
-.Display {
-    background-color: rgb(104, 36, 36);
-    margin-bottom: 1em;
+.btn{
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    width: 150px;
+    color: #466abe;
+    text-decoration: none;
+    border: solid 2px #6d93eb;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
 }
-.Delete{
-    background-color: rgb(144, 30, 101);
-    margin-bottom: 1em;
+
+.InputElements {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
+
+@media (max-width: 500px) {
+    
+    .header {
+        font-size: 25px;
+    }
+
+    .SubHeading {
+        font-size: 25px;
+    }
+    .SecondHeading {
+        font-size: 30px;
+    }
+  }
