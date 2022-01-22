@@ -42,7 +42,7 @@ const displayCookies = () => {
 
 }
 
-const createButton = document.querySelector("#create")
+
 
 
 
