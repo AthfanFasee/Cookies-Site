@@ -3,18 +3,40 @@ body {
     font-size: 1.3125rem;
 }
 
+@media (min-width: 700px) {
+    header,
+    .Content{
+        padding: 60px;
+    }
+}
+
+header,
+.Content{
+    padding: 30px 0;
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    display: flex;
+    flex-direction: column;
+}
+.SubHeading{
+    margin-bottom: 0.75em;
+}
+
 .Create {
     background-color: rgb(79, 118, 151);
+    margin-bottom: 1em;
 }
 
 .Update {
     background-color: rgb(107, 189, 69);
-
+    margin-bottom: 1em;
 }
 
 .Display {
     background-color: rgb(104, 36, 36);
+    margin-bottom: 1em;
 }
 .Delete{
     background-color: rgb(144, 30, 101);
+    margin-bottom: 1em;
 }
