@@ -76,8 +76,16 @@ header,
     
 }
 
-@media (max-width: 500px) {
-    
+@media (max-width: 1016px) {
+    .Maincontainer{
+        margin: 10px;     
+    }
+    .Content{
+        margin: 2px;
+    }
+    .InputElements{
+        
+    }
     .header {
         font-size: 25px;
     }
@@ -87,5 +95,11 @@ header,
     }
     .SecondHeading {
         font-size: 30px;
+    }
+    .display{
+        font-size: 10px;
+    }
+    .btn{
+        width: 100px;
     }
   }

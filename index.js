@@ -36,7 +36,10 @@ const deleteCookies = () => {
 
 // Display Cookies
 const displayCookies = () => {
-    document.getElementById("display").innerText = document.cookie
+    const displayElement = document.getElementById("display")
+    displayElement.classList.add("displaycookies");
+    displayElement.innerText = document.cookie
+
 }
 
 const createButton = document.querySelector("#create")
