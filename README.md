@@ -1,4 +1,2 @@
 # Cookies-Site
-CRUD COOKIES HERE
-
-A Site I made using only vanilla JS where users can create, update and delete cookies as needed. They can also display the existing cookies in a user-friendly manner
+Created a user-friendly website using only vanilla JS, enabling users to create, update, and delete cookies as needed. The site also provides a seamless display of existing cookies.
